@@ -34,6 +34,8 @@
 \usepackage{enumitem}
 \usepackage[numbers]{natbib}
 %\renewcommand{\bibfont}{\fontsize{10}{12}}
+\usepackage{pgf-pie}
+
 
 \definecolor{myred}{RGB}{128,0,32} 
 \definecolor{myyellow}{RGB}{255,191,0}
@@ -48,17 +50,18 @@
 \setbeamertemplate{title page}{%
   \begin{tikzpicture}[remember picture,overlay]
     % Inserisci l'immagine di sfondo con trasparenza
-    \node[opacity=0.5] at (current page.center) {\includegraphics[width=\paperwidth,height=\paperheight]{images/bg-img.png}};
-    % Inserisci il titolo, l'autore e la data al centro della pagina
-    \fontsize{20pt}{11pt}\selectfont
+    \node[opacity=0.5] at (current page.center) {\includegraphics[width=\paperwidth,height=\paperheight]{images/bg-img.png}}
+ \node[anchor=south east, xshift=-5mm, yshift=5mm, font=\tiny] at (current page.south east) {HOM\`ERE di Auguste Leloir, Museo del Louvre};
+ % Inserisci il titolo, l'autore e la data al centro della pagina
+    \fontsize{10}{6}
     \node[font=\bfseries,text=myred,opacity=1.0] at (current page.center) {
       \begin{minipage}[b][\paperheight]{\textwidth}
         \centering
-        \vfill
+                \vspace{0.5cm}
         \usebeamerfont{title}\inserttitle\par
         \vspace{0.5cm} % Aggiungi spazio verticale tra il titolo e il sottotitolo
         \usebeamerfont{subtitle}\insertsubtitle\par % Inserisci il sottotitolo
-        \vspace{1.5cm}
+        \vspace{1cm}
         \usebeamerfont{author}\insertauthor\par
         \vfill
         \vfill
