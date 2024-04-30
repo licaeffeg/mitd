@@ -1,14 +1,10 @@
 \documentclass{beamer}
-
 \usepackage{styles/mystyle}
-\usepackage{natbib}
-\usepackage[nottoc]{tocbibind}
-
-
 %----------------------------------------------------------------------------------------
 %	TITLE PAGE
 %----------------------------------------------------------------------------------------
 \title[SaSSLR]{Software as Storytelling: a systematic literature review}
+
 \subtitle{\small P. Ciancarini, M. Farina, O. Okonicha, M. Smirnova, G. Succi}
 \author{presentazione a cura di Federico Licastro}
 
@@ -17,39 +13,6 @@
 \begin{frame}
   \titlepage
 \end{frame}
-
-%=============================================
-
-
-%=============================================
-
-%\begin{frame}
-%{\centerline{Indice}}
-%\begin{enumerate}
- %   \item Software development e storytelling
-%\vspace{0.5cm}
-    %\item Metodologia di ricerca
-   % \vspace{0.5cm}
-  %  \item Risultati
- %\vspace{0.5cm}   
-%    \item Discussione
-%\end{enumerate} 
-%\end{frame}
-
-
-%---------------------------------------------
-%\begin{frame}{\centerline{}}
-
-%\begin{center}
-%{\Large
-%Software development e storytelling \\
-%}
-%\end{center}
-%\end{frame}
-%=============================================
-
-
-
 %---------------------------------------------
 \begin{frame}{\centerline{Cos'è lo storytelling?}}
 
@@ -61,11 +24,13 @@ Le origini visuali di questa pratica \cite{feliks2011prehistory}, che consiste n
 
       \vspace{0.5cm}
       
-      \begin{table}[H]
+      \begin{figure}[H]
   \begin{tabulary}{\textwidth}{m{5.5cm} m{5.5cm}}
-        Secondo \citeauthor{Ciriello2017ProtoStory}, una storia \'e un resoconto di azioni raccolte da eventi, sia reali sia di fantasia. & \includegraphics[width=0.4\textwidth]{images/img-1.jpg} \\
+        Secondo \citeauthor{Ciriello2017ProtoStory}, una storia \'e un resoconto di azioni raccolte da eventi, sia reali sia di fantasia. & \includegraphics[width=0.4\textwidth]{images/img-1.jpg}
+            \caption{Grotte di Lascaux}
+        \\
     \end{tabulary}
-    \end{table}
+    \end{figure}
 
 %\begin{flushright}
 %\includegraphics[width=0.5\textwidth]{images/img-1.jpg}
@@ -252,7 +217,31 @@ Criteri di inclusione ed esclusione applicati per filtrare la selezione dei pape
 
 \end{frame}
 %=============================================
-
+\begin{frame}[t]{\centerline{Dati raccolti}}
+\begin{figure}[htbp]
+    \centering
+    \begin{tikzpicture}
+        \pie[
+            sum=auto,
+            radius=3,
+            before number=\strut,
+            after number=,
+            explode=0.1,
+            color={blue!50, green!50, red!50, orange!50, purple!50, brown!50}
+            ]{
+            26/Coding,
+            37/RE,
+            6/Testing,
+            8/Maintenance,
+            3/Prototyping,
+            20/Model Design
+        }
+    \end{tikzpicture}
+    \caption{Distribuzione dei papers per fasi di SE}
+    \label{fig:distribution}
+\end{figure}
+\end{frame}
+%=================================================
 \tiny
 \begin{frame}{\centerline{Bibliografia della presentazione}}
 \begin{multicols}{2}
