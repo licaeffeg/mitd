@@ -3,48 +3,33 @@
   \usetheme{Madrid}     
   \usecolortheme{crane} 
   \usefonttheme{serif} 
+  \setbeamertemplate{navigation symbols}{}
   \setbeamertemplate{caption}[numbered]
   \setbeamertemplate{itemize items}{}
   \usepackage{tcolorbox}
-  \usepackage[export]{adjustbox}
-  \tcbuselibrary{most}
-  \usepackage{arydshln}
   \usepackage{tikz}
-    \usetikzlibrary{shapes.geometric, positioning, arrows.meta}  
-  \usepackage{pgfplots}
+  \usetikzlibrary{shapes.geometric, positioning, arrows.meta}  
   \usepackage[normalem]{ulem}
-  \usepackage{listings}
-  \usepackage{setspace}
-  \usepackage{array}
-    
+  \usepackage{setspace}    
 } 
+\usepackage[nottoc]{tocbibind}
+\usepackage[square,numbers]{natbib}
 \usepackage{multicol}
 \usepackage[english]{babel}
 \usepackage[utf8x]{inputenc}
 \usepackage{xcolor}
-\usepackage{listings}
-\usepackage{pgf}  
-\usepackage{textpos}
 \usepackage{tabulary}
-\usepackage{scrextend}
 \usepackage{hyperref}
 \usepackage{setspace}
-\usepackage{rotating}
 \usepackage{graphicx}
 \usepackage{enumitem}
-\usepackage[numbers]{natbib}
-%\renewcommand{\bibfont}{\fontsize{10}{12}}
 \usepackage{pgf-pie}
-
-
 \definecolor{myred}{RGB}{128,0,32} 
 \definecolor{myyellow}{RGB}{255,191,0}
 \setbeamercolor{title}{fg=myred}
 \setbeamercolor{structure}{fg=myred,bg=white}
 \setbeamercolor{section in head/foot}{fg=white,bg=myyellow}
 \setbeamercolor{author in head/foot}{fg=white,bg=myred}
-
-
 
 % Definizione del template della pagina del titolo
 \setbeamertemplate{title page}{%
@@ -75,10 +60,10 @@
 {
   \leavevmode%
   \hbox{%
-  \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.25ex,dp=1ex,right]{author in head/foot}%
+  \begin{beamercolorbox}[wd=.5\paperwidth,ht=2ex,dp=1ex,right]{author in head/foot}%
     \usebeamerfont{author in head/foot}\insertshortauthor\hspace*{2em}
   \end{beamercolorbox}%
-  \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.25ex,dp=1ex,left]{title in head/foot}%
+  \begin{beamercolorbox}[wd=.5\paperwidth,ht=2ex,dp=1ex,left]{title in head/foot}%
     \usebeamerfont{title in head/foot}\hspace*{18em}
     \insertframenumber{} / \inserttotalframenumber
   \end{beamercolorbox}}%
